@@ -9,7 +9,7 @@ import { PaymentResponse } from '../responses/payment.response';
   providedIn: 'root',
 })
 export class PaymentService {
-  private paymentApiUrl = 'http://localhost:8080/api/v1/payment'; // Thay bằng URL thực tế của bạn
+  private paymentApiUrl = 'http://34.92.182.137:8080/api/v1/payment'; // Thay bằng URL thực tế của bạn
 
   constructor(private http: HttpClient, private tokenService: TokenService) {}
 
