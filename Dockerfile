@@ -7,8 +7,11 @@ WORKDIR /app
 # Sao chép package.json và package-lock.json để cài đặt các phụ thuộc
 COPY package*.json ./
 
-# Cài đặt các phụ thuộc
-RUN npm install
+# Cài đặt npm mới nhất
+RUN npm install -g npm@latest
+
+# Cài đặt các phụ thuộc với legacy peer deps
+RUN npm install --legacy-peer-deps
 
 # Sao chép toàn bộ mã nguồn vào container
 COPY . .
