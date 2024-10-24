@@ -1,5 +1,5 @@
-# Sử dụng hình ảnh Node.js làm cơ sở
-FROM node:14
+# Sử dụng hình ảnh Node.js mới hơn làm cơ sở
+FROM node:18
 
 # Đặt thư mục làm việc
 WORKDIR /app
