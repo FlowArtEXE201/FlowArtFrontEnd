@@ -1,0 +1,106 @@
+<div class="container-fluid">
+  <h1>Orders Admin Page</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Note</th>
+        <!-- <th>Order Date</th> -->
+        <th>Status</th>
+        <th>Total Money</th>
+        <!-- <th>Shipping Method</th>
+        <th>Shipping Address</th> -->
+        <!-- <th>Shipping Date</th> -->
+        <th>Payment Method</th>
+        <th></th>
+        <th></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.id }}</td>
+        <td>{{ order.user_id }}</td>
+        <td>{{ order.fullname }}</td>
+        <td>{{ order.email }}</td>
+        <td>{{ order.phone_number }}</td>
+        <td>{{ order.address }}</td>
+        <td>{{ order.note }}</td>
+        <!-- <td>{{ order.order_date | date }}</td> -->
+        <td>{{ order.status }}</td>
+        <td>{{ order.total_money }}</td>
+        <!-- <td>{{ order.shipping_method }}</td>
+        <td>{{ order.shipping_address }}</td> -->
+        <!-- <td>{{ order.shipping_date | date }}</td> -->
+        <td>{{ order.payment_method }}</td>
+        <td>
+          <button class="btn btn-info" (click)="viewDetails(order)">Detail</button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteOrder(order.id)">Delete</button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+  <!-- <div class="d-flex justify-content-center">
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item" *ngIf="currentPage > 1">
+          <a class="page-link" (click)="onPageChange(1)">First</a>
+        </li>
+        <li class="page-item" *ngIf="currentPage > 1">
+          <a class="page-link" (click)="onPageChange(currentPage - 1)">Previous</a>
+        </li>
+        <ng-container *ngFor="let page of visiblePages">
+          <li class="page-item" [ngClass]="{'active': page === currentPage}">
+            <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+          </li>
+        </ng-container>
+        <li class="page-item" *ngIf="currentPage < totalPages">
+          <a class="page-link" (click)="onPageChange(currentPage + 1)">Next</a>
+        </li>
+        <li class="page-item" *ngIf="currentPage < totalPages">
+          <a class="page-link" (click)="onPageChange(totalPages)">Last</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div> -->
+  <div class="pagination-container  d-flex justify-content-center">
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <!-- Hiển thị nút "First" nếu không phải là trang đầu tiên -->
+        <li class="page-item" *ngIf="currentPage > 0">
+          <a class="page-link" (click)="onPageChange(0)">First</a>
+        </li>
+
+        <!-- Hiển thị nút "Previous" nếu không phải là trang đầu tiên -->
+        <li class="page-item" *ngIf="currentPage > 0">
+          <a class="page-link" (click)="onPageChange(currentPage - 1)">Previous</a>
+        </li>
+
+        <!-- Hiển thị các trang trong mảng visiblePages -->
+        <ng-container *ngFor="let page of visiblePages">
+          <li class="page-item" [ngClass]="{'active': page === currentPage}">
+            <a class="page-link" (click)="onPageChange(page)">{{ page + 1 }}</a>
+          </li>
+        </ng-container>
+
+        <!-- Hiển thị nút "Next" nếu không phải là trang cuối -->
+        <li class="page-item" *ngIf="currentPage < totalPages - 1">
+          <a class="page-link" (click)="onPageChange(currentPage + 1)">Next</a>
+        </li>
+
+        <!-- Hiển thị nút "Last" nếu không phải là trang cuối -->
+        <li class="page-item" *ngIf="currentPage < totalPages - 1">
+          <a class="page-link" (click)="onPageChange(totalPages - 1)">Last</a>
+        </li>
+      </ul>
+    </nav>
+  </div>

@@ -1,0 +1,100 @@
+<!-- 
+<header>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <nav class="navbar navbar-expand-lg" style="background: rgb(58, 221, 255); padding: 0 15px;">
+        <div class="container-fluid d-flex justify-content-between align-items-center" style="max-width: 100%;">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://i.imgur.com/VEhoP1F.jpeg" alt="Logo" style="max-width: 100px; height: 100px;">
+                </a>
+            </div>
+
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/" href="#">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/" href="#">Giỏ Hàng <i
+                            class="fa-solid fa-cart-shopping"></i></a>
+
+                </li> -->
+<!-- <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li> -->
+<!-- <li class="nav-item">
+                    <button class="btn btn-dark" style="margin-left: 10px;">
+                        <a class="text-white" href="#" routerLink="/" style="text-decoration: none;">Đăng Kí</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-dark" style="margin-left: 10px;">
+                        <a class="text-white" href="#" routerLink="/" style="text-decoration: none;">Đăng Nhập</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header> -->
+<!-- https://suno.vn/blog/wp-content/uploads/2014/12/nike-lich-su-thiet-ke-logo.jpg -->
+
+
+<header>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <nav class="navbar navbar-expand-lg" style="background: rgb(58, 221, 255); padding: 0 15px;">
+        <div class="container-fluid d-flex justify-content-between align-items-center" style="max-width: 100%;">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://i.imgur.com/VEhoP1F.jpeg" routerLink="/" alt="Logo"
+                        style="max-width: 100px; height: 100px;">
+                </a>
+            </div>
+            <ul class="navbar-nav d-flex flex-row">
+
+                <li class="nav-item">
+
+                    <a class="nav-link text-white home-link" routerLink="/" routerLinkActive="active">Trang Chủ</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-white  notification-link" routerLink="/" routerLinkActive="active">Thông
+                        Báo</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link text-white cart-link" routerLink="/orders" routerLinkActive="active">Giỏ
+                        Hàng <i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li class="nav-item">
+                    <ng-container *ngIf="!userResponse">
+                        <button class="btn btn-dark" style="margin-left: 10px;">
+                            <a class="text-white" routerLink="/register" style="text-decoration: none;">Đăng Kí</a>
+                        </button>
+                    </ng-container>
+                </li>
+
+                <li class="nav-item">
+                    <ng-container *ngIf="!userResponse">
+                        <button class="btn btn-dark login" style="margin-left: 10px;">
+                            <a class="text-white" routerLink="/login" style="text-decoration: none;">Đăng Nhập</a>
+                        </button>
+                    </ng-container>
+                </li>
+                <li [ngClass]="{'active': activeNavItem===3}" (click)="setActiveNavItem(3)" class="nav-item">
+                    <ng-container *ngIf="userResponse">
+                        <a style="color: white; font-weight: bold;" class="nav-link " [ngbPopover]="popoverContent"
+                            popoverTitle="User Actions" triggers="click" [placement]="'bottom'"
+                            (click)="togglePopover($event)">
+                            {{ userResponse.fullname }}
+                        </a>
+                        <ng-template #popoverContent>
+                            <div class="popover-list">
+                                <a class="popover-item" (click)="handleItemClick(0)">Tài khoản của tôi</a>
+                                <a class="popover-item" (click)="handleItemClick(1)">Đơn mua</a>
+                                <a class="popover-item" (click)="handleItemClick(2)">Đăng xuất</a>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>

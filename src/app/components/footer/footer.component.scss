@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black !important;
+}
+
+.container footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: rgb(58, 221, 255);
+    padding: 30px 0;
+    /* Giảm padding */
+}
+
+.footer-col {
+    text-align: center;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    /* Giảm kích thước font chữ */
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    /* Giảm khoảng cách dưới tiêu đề */
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    /* Giảm khoảng cách dưới đường viền */
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 8px;
+    /* Giảm khoảng cách giữa các liên kết */
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    /* Giảm kích thước font chữ */
+    text-transform: capitalize;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+    /* Giảm khoảng cách khi hover */
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 30px;
+    /* Giảm chiều cao biểu tượng */
+    width: 30px;
+    /* Giảm chiều rộng biểu tượng */
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 8px 8px 0;
+    /* Giảm khoảng cách giữa các biểu tượng */
+    text-align: center;
+    line-height: 30px;
+    /* Căn giữa văn bản bên trong biểu tượng */
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Responsive */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

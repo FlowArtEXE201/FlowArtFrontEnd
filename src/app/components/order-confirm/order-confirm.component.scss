@@ -1,0 +1,112 @@
+.confirmation-container {
+    margin: 50px auto;
+    padding: 30px;
+    /* Tăng padding để tạo khoảng trống bên trong */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    /* Điều chỉnh bóng đổ cho rõ nét hơn */
+    background-color: #f9f9f9;
+    /* Thêm màu nền nhạt để nội dung nổi bật */
+}
+
+
+.intro-section {
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.product-infor {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.product-name {
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border-collapse: separate;
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-gradient {
+    background-color: rgb(58, 221, 255);
+    color: black;
+    border-radius: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Để không có khoảng trống giữa các ô */
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    /* Thêm khoảng cách cho các ô */
+    text-align: left;
+    /* Canh trái nội dung trong các ô */
+    border-bottom: 1px solid #ddd;
+    /* Đường viền dưới mỗi hàng */
+}
+
+.product-info {
+    display: flex;
+    /* Sử dụng Flexbox để sắp xếp hình ảnh và tên sản phẩm */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+}
+
+.product-image {
+    width: 50px;
+    /* Đặt kích thước cho hình ảnh */
+    height: 50px;
+    /* Đặt kích thước cho hình ảnh */
+    object-fit: cover;
+    /* Đảm bảo hình ảnh không bị biến dạng */
+    margin-right: 10px;
+    /* Khoảng cách giữa hình ảnh và tên sản phẩm */
+}
+
+.product-name {
+    font-weight: bold;
+    /* In đậm tên sản phẩm */
+}
+
+@media (max-width: 768px) {
+
+    .table th,
+    .table td {
+        padding: 10px;
+        /* Giảm khoảng cách cho thiết bị di động */
+    }
+
+    .product-image {
+        width: 40px;
+        /* Giảm kích thước hình ảnh cho thiết bị di động */
+        height: 40px;
+        /* Giảm kích thước hình ảnh cho thiết bị di động */
+    }
+}

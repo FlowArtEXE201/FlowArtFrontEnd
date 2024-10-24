@@ -1,0 +1,282 @@
+<!-- <app-header></app-header>
+<div class="container custom-container">
+    <div class="intro-section">
+        <h1>Đây là trang home</h1>
+        <p>Trang này hiển thị danh sách các sản phẩm</p>
+        <p>Trang này hiển thị danh sách các sản phẩm</p>
+    </div>
+
+    <div class="search-box">
+        <input type="text" class="form-control search-input" placeholder="Tìm sản phẩm">
+        <select class="form-control product-category">
+            <option selected disabled>Danh mục</option>
+            <option>Bao cao su 1</option>
+            <option>Bao cao su 2</option>
+            <option>Bao cao su 3</option>
+            <option>Bao cao su 4</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6" *ngFor="let product of products">
+            <div class="product-item">
+                <img [src]="product.url" alt="Product Image" class="product-image">
+                <h3 class="product-name">{{product.name}}</h3>
+                <p class="product-decription">{{product.description}}</p>
+                <p class="product-price">Giá: ${{product.price}}</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img class="product-image" src="https://i.pinimg.com/564x/45/35/a4/4535a49a77442112a05c302e2a5b44df.jpg"
+                    alt="Product Image">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-decription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="product-warranty">Bảo hành 12 tháng</p>
+                <p class="product-price">Giá <del>$200</del> $100</p>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button class="btn btn-success">mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<app-footer></app-footer> -->
+<app-header></app-header>
+<div class="container custom-container">
+    <div class="intro-section">
+        <h1>FlowArt</h1>
+        <p>Nơi nghệ thuật gặp gỡ đam mê</p>
+    </div>
+
+    <div class="search-box">
+        <input type="text" class="form-control search-input" placeholder="Tìm sản phẩm" [(ngModel)]="keyword">
+        <select class="form-control product-category" [(ngModel)]="selectedCategoryId">
+            <option value="0">Tất cả</option>
+            <option *ngFor="let category of categories" [value]="category.id">
+                {{ category.name }}
+            </option>
+        </select>
+        <button class="btn btn-primary ml-3 search-button" (click)="searchProduct()">Tìm kiếm</button>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6" *ngFor="let product of products">
+            <div class="product-item">
+                <a [routerLink]="['/products', product.id]">
+                    <img [src]="product.url" alt="Product Image" class="product-image">
+                </a>
+                <h3 class="product-name">{{ product.name }}</h3>
+                <p class="product-decription">{{ product.description }}</p>
+                <p class="product-price">Giá: {{ product.price | currency:'USD' }}</p>
+                <div class="product-rating">
+                    <i class="fas fa-star" *ngFor="let star of [].constructor(4); let i = index"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button [routerLink]="['/products', product.id]" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    <span class="space"></span>
+                    <button [routerLink]="['/products', product.id]" class="btn btn-success">Mua
+                        hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pagination-container">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <!-- Hiển thị nút "First" nếu không phải là trang đầu tiên -->
+            <li class="page-item" *ngIf="currentPage > 0">
+                <a class="page-link" href="#" (click)="onPageChange(0)">First</a>
+            </li>
+
+            <!-- Hiển thị nút "Previous" nếu không phải là trang đầu tiên -->
+            <li class="page-item" *ngIf="currentPage > 0">
+                <a class="page-link" href="#" (click)="onPageChange(currentPage - 1)">Previous</a>
+            </li>
+
+            <!-- Hiển thị các trang trong mảng visiblePages -->
+            <ng-container *ngFor="let page of visiblePages">
+                <li class="page-item" [ngClass]="{'active': page === currentPage}">
+                    <a class="page-link" href="#" (click)="onPageChange(page)">{{ page + 1 }}</a>
+                </li>
+            </ng-container>
+
+            <!-- Hiển thị nút "Next" nếu không phải là trang cuối -->
+            <li class="page-item" *ngIf="currentPage < totalPages - 1">
+                <a class="page-link" href="#" (click)="onPageChange(currentPage + 1)">Next</a>
+            </li>
+
+            <!-- Hiển thị nút "Last" nếu không phải là trang cuối -->
+            <li class="page-item" *ngIf="currentPage < totalPages - 1">
+                <a class="page-link" href="#" (click)="onPageChange(totalPages - 1)">Last</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,66 @@
+<div class="container-fluid">
+    <h1>Products Admin Page</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Category ID</th>
+                <!-- <th>URL</th> -->
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.id }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price | currency }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.categoryId }}</td>
+                <!-- <td>{{ product.url }}</td> -->
+                <!-- <td>
+                    <button class="btn btn-info" (click)="viewDetails(product)">Detail</button>
+                </td> -->
+                <!-- <td>
+                    <button class="btn btn-danger" (click)="deleteProduct(product.id)">Delete</button>
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="pagination-container d-flex justify-content-center">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <!-- Hiển thị nút "First" nếu không phải là trang đầu tiên -->
+                <li class="page-item" *ngIf="currentPage > 0">
+                    <a class="page-link" (click)="onPageChange(0)">First</a>
+                </li>
+
+                <!-- Hiển thị nút "Previous" nếu không phải là trang đầu tiên -->
+                <li class="page-item" *ngIf="currentPage > 0">
+                    <a class="page-link" (click)="onPageChange(currentPage - 1)">Previous</a>
+                </li>
+
+                <!-- Hiển thị các trang trong mảng visiblePages -->
+                <ng-container *ngFor="let page of visiblePages">
+                    <li class="page-item" [ngClass]="{'active': page === currentPage}">
+                        <a class="page-link" (click)="onPageChange(page)">{{ page + 1 }}</a>
+                    </li>
+                </ng-container>
+
+                <!-- Hiển thị nút "Next" nếu không phải là trang cuối -->
+                <li class="page-item" *ngIf="currentPage < totalPages - 1">
+                    <a class="page-link" (click)="onPageChange(currentPage + 1)">Next</a>
+                </li>
+
+                <!-- Hiển thị nút "Last" nếu không phải là trang cuối -->
+                <li class="page-item" *ngIf="currentPage < totalPages - 1">
+                    <a class="page-link" (click)="onPageChange(totalPages - 1)">Last</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

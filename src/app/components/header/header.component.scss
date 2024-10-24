@@ -1,0 +1,74 @@
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Các class của popover */
+.popover-list {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    /* Áp dụng font Poppins */
+}
+
+.popover-item {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    /* Áp dụng font Poppins */
+}
+
+.popover-item:hover {
+    background-color: white;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    /* Áp dụng font Poppins */
+}
+
+.nav-item:hover {
+    transition: 0.1s;
+}
+
+.nav-item.active {
+    color: white !important;
+    background-color: #13172A;
+    border-radius: 15px;
+
+}
+
+.nav-item a {
+    color: black;
+    border-radius: 15px;
+
+    /* Màu chữ cho các liên kết nav-item */
+}
+
+
+
+.nav-item a:hover {
+
+    // background-color: #23272B;
+    /* Màu nền khi hover */
+    color: red;
+    cursor: pointer;
+    /* Màu chữ khi hover */
+}
+
+.btn-dark {
+    margin-left: 10px;
+}
+
+.home-link:hover {
+    background-color: #23272B;
+    /* Màu nền khi hover cho Trang Chủ */
+}
+
+.notification-link:hover {
+    background-color: #23272B;
+    /* Màu nền khi hover cho Thông Báo */
+}
+
+.cart-link:hover {
+    background-color: #23272B;
+    /* Màu nền khi hover cho Giỏ Hàng */
+}

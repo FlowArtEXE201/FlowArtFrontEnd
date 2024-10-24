@@ -1,0 +1,57 @@
+.container {
+    margin-bottom: 20px;
+}
+
+.intro-section {
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.product-header {
+    color: black;
+}
+
+.form-control:focus {
+    border-color: black;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border-collapse: separate;
+    border: 1px solid white;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.product-name {
+    color: black;
+    margin-right: 10px;
+}
+
+.btn-gradient {
+    background-color: rgb(58, 221, 255);
+    color: white;
+    border-radius: 30px;
+    width: 200px;
+}

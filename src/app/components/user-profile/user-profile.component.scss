@@ -1,0 +1,68 @@
+.container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Nền sáng nhẹ nhàng */
+    border-radius: 10px;
+    /* Bo tròn góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.product-header {
+    color: black;
+    /* Màu xanh dương tươi sáng */
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Thêm khoảng cách dưới tiêu đề */
+}
+
+.form-label {
+    color: #34495e;
+    /* Màu xám tối cho nhãn */
+    font-weight: 500;
+    /* Chữ nửa đậm cho nhãn */
+}
+
+.form-control {
+    border-radius: 5px;
+    /* Bo tròn các ô nhập liệu */
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    /* Màu xanh dương khi ô nhập liệu được chọn */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.invalid-feedback {
+    font-size: 0.9rem;
+    /* Kích thước chữ nhỏ hơn cho thông báo lỗi */
+    color: #e74c3c;
+    /* Màu đỏ cho thông báo lỗi */
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, rgba(58, 221, 255, 1) 0%, rgba(41, 128, 185, 1) 100%);
+    /* Gradient cho nút */
+    color: white;
+    border-radius: 30px;
+    /* Bo tròn nút */
+    width: 200px;
+    padding: 10px;
+    /* Thêm padding cho nút */
+    transition: background 0.3s ease;
+    /* Hiệu ứng chuyển màu khi hover */
+    border: none;
+    /* Xóa viền nút */
+    display: inline-block;
+    /* Để căn giữa */
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(58, 221, 255, 1) 100%);
+    /* Đảo ngược gradient khi hover */
+    cursor: pointer;
+    /* Thay đổi con trỏ khi hover */
+}

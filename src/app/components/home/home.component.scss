@@ -1,0 +1,177 @@
+.custom-container {
+    max-width: 1400px;
+    /* Bạn có thể điều chỉnh kích thước theo ý muốn */
+    margin: 0 auto;
+    /* Giữ cho container căn giữa */
+}
+
+
+.intro-section {
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.product-category {
+    width: 150px;
+    height: 40px;
+    text-align: left;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-control::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.search-input {
+    width: 300px;
+    /* background-color: rgb(13, 23, 43); */
+    margin-right: 10px;
+    border-color: black;
+    color: black;
+    height: 40px;
+}
+
+.form-control {
+    background-color: transparent;
+    color: black;
+}
+
+.product-item {
+    background-color: rgb(19, 23, 42);
+    border: 1px solid rgb(35, 39, 61);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.product-image {
+    width: 100%;
+    /* Kích thước chiếm toàn bộ chiều rộng */
+    height: 250px;
+    /* Giữ tỉ lệ hình ảnh */
+    margin-bottom: 10px;
+    /* Khoảng cách phía dưới */
+    object-fit: cover;
+    /* Hoặc 'contain' tùy vào yêu cầu của bạn */
+    border-radius: 8px;
+    /* Bo góc với bán kính 8px, bạn có thể thay đổi giá trị này tùy ý */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Bóng đổ cho hình ảnh */
+
+}
+
+
+.product-name {
+    color: white;
+}
+
+.product-decription {
+    color: rgb(173, 178, 203);
+}
+
+.product-warranty {
+    color: rgb(242, 126, 212);
+}
+
+.product-price {
+    color: white;
+}
+
+.product-rating {
+    color: #FED700;
+    margin-top: 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.space {
+    margin: 0 5px;
+}
+
+.pagination-container {
+    display: flex;
+    /* Sử dụng Flexbox */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    margin: 20px 0;
+    /* Thêm khoảng cách phía trên và dưới */
+}
+
+.pagination {
+    display: flex;
+    /* Sử dụng Flexbox cho các phần tử trong pagination */
+    list-style: none;
+    /* Bỏ kiểu danh sách */
+    padding: 0;
+    /* Bỏ padding mặc định */
+    margin: 0;
+    /* Bỏ margin mặc định */
+}
+
+.page-item {
+    margin: 0 5px;
+    /* Thêm khoảng cách giữa các phần tử trang */
+}
+
+.page-link {
+    text-decoration: none;
+    /* Bỏ gạch chân */
+    padding: 10px 15px;
+    /* Thêm padding cho các liên kết */
+    border: 1px solid #007bff;
+    /* Thêm viền cho các liên kết */
+    color: #007bff;
+    /* Màu chữ */
+    border-radius: 5px;
+    /* Bo góc */
+}
+
+.page-link:hover {
+    background-color: #007bff;
+    /* Màu nền khi hover */
+    color: white;
+    /* Màu chữ khi hover */
+}
+
+.active .page-link {
+    background-color: #007bff;
+    /* Màu nền cho trang đang được chọn */
+    color: white;
+    /* Màu chữ cho trang đang được chọn */
+}
+
+.search-button {
+    margin-bottom: 22px;
+}
