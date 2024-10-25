@@ -1,23 +1,23 @@
-# Sử dụng hình ảnh Node.js mới hơn làm cơ sở
-FROM node:18
+# Use the official Node.js image as the base image
+FROM node:18.19.1
 
-# Đặt thư mục làm việc
-WORKDIR /app
+# Set the working directory inside the container
+WORKDIR /front-end
 
-# Sao chép package.json và package-lock.json để cài đặt các phụ thuộc
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Cài đặt npm mới nhất
-RUN npm install -g npm@latest
+# Install the Angular CLI globally
+RUN npm install -g @angular/cli
 
-# Cài đặt các phụ thuộc với legacy peer deps
+# Install the dependencies
 RUN npm install --legacy-peer-deps
 
-# Sao chép toàn bộ mã nguồn vào container
+# Copy the rest of the project files to the working directory
 COPY . .
 
-# Mở cổng mà ứng dụng Angular sẽ chạy
+# Expose the port the app runs on
 EXPOSE 4200
 
-# Chạy ứng dụng Angular với chế độ phát triển
-CMD ["npm", "start"]
+# Start the app in development mode
+CMD ["ng", "serve", "--host", "0.0.0.0"]
